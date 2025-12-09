@@ -47,7 +47,7 @@ Siga os passos abaixo para instalar no seu computador.
 
 ### 3. Banco de Dados
 * Acesse [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
-* Importe o arquivo `banco.sql` que está na pasta do projeto.
+* Importe o arquivo `clinica.sql` que está na pasta do projeto.
 
 > **Atenção:** O projeto está configurado para a porta **3307** do MySQL. Se o seu XAMPP usa a porta 3306, altere o arquivo `conexao.php`.
 
@@ -75,5 +75,6 @@ Use estes usuários para testar o sistema:
 * **Ester da Silva Americo**
 
 ---
+
 
 
