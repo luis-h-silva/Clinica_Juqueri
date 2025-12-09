@@ -11,4 +11,5 @@ $mysqli = new mysqli($host, $user, $password, $database, $port);
 if ($mysqli->connect_errno) {
     die("Falha ao conectar ao banco de dados: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
 }
+
 ?>
