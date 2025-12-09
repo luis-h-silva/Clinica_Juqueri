@@ -1,0 +1,294 @@
+/*  inicio */
+
+:root {
+    --cor-principal: #0A386D;
+    --cor-secundaria: #007BFF;      
+    --cor-saude: #4DB6AC;       
+    --cor-fundo-claro: #F8F9FA;    
+    --cor-texto-principal: #343A40; 
+    --cor-borda-padrao: #dee2e6;   
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif; 
+    color: var(--cor-texto-principal);
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+    padding: 0; 
+    min-height: 100vh;
+    background-color: var(--cor-fundo-claro);
+}
+
+.conteudo-principal-centralizado {
+    flex-grow: 1; 
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 40px 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header */
+
+.header-padrao {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px; /* Aumentado para acomodar a logo */
+    background-color: var(--cor-principal); 
+    border-bottom: 4px solid var(--cor-saude); 
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header-conteudo {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.logo-header {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.links-navegacao a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.links-navegacao a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+
+/* IMAGEM DE CAPA/LOGO (Página Inicial) */
+
+.capa {
+    width: 100%; 
+    max-height: 350px;
+    object-fit: cover; 
+}
+.logo-flutuante { 
+    width: 250px;
+    height: auto;
+    object-fit: contain; 
+    margin: 20px 0 40px 0; 
+}
+
+/* TÍTULO DA PÁGINA INICIAL */
+.conteudo-principal-centralizado h2 {
+    color: var(--cor-principal);
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+.conteudo-principal-centralizado p {
+    color: var(--cor-texto-principal);
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+.footer-padrao {
+    width: 100%;
+    height: 45px;
+    background-color: var(--cor-texto-principal); 
+    border-top: 4px solid var(--cor-saude); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+.link-footer {
+    text-decoration: none;
+    color: #cccccc; 
+    padding: 0 10px;
+    transition: color 0.3s;
+}
+.link-footer:hover {
+    color: var(--cor-saude);
+}
+
+/* ESTILOS DA TELA INICIAL index.php */
+
+.botoes-iniciais {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    margin-top: 40px;
+}
+
+.botao {
+    display: block; 
+    width: 350px; 
+    padding: 18px 30px;
+    background-color: var(--cor-secundaria); 
+    color: white;
+    font-size: 1.3em; 
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 0 #0056b3; 
+    transition: all 0.1s;
+}
+
+.botao:hover {
+    background-color: #0069d9;
+}
+
+.botao:active {
+    box-shadow: 0 1px 0 #0056b3;
+    transform: translateY(3px);
+}
+
+/* Botão Específico: Área Administrativa (Apenas mudança de cor, herdando o tamanho) */
+.botao-administrativo {
+    background-color: var(--cor-texto-principal); 
+    box-shadow: 0 4px 0 #23272b;
+}
+.botao-administrativo:hover {
+    background-color: #495057;
+}
+.botao-administrativo:active {
+    box-shadow: 0 1px 0 #23272b;
+}
+
+
+/*ESTILOS DE FORMULÁRIO (LOGIN/CADASTRO) */
+
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Largura fixa para o formulário */
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 20px; /* Espaçamento do topo */
+}
+
+.form-container h2 {
+    color: var(--cor-principal);
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--cor-borda-padrao);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block; 
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--cor-texto-principal);
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="email"],
+.input-group input[type="date"],
+.input-group select {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid var(--cor-borda-padrao);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: var(--cor-secundaria);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Botão de Submissão (Login/Cadastro) */
+.btn-submit {
+    width: 100%; 
+    padding: 12px;
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #0069d9;
+}
+
+/* Links em Formulários */
+.form-links {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.form-links a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+    color: var(--cor-principal);
+}
+
+/* Mensagens de Feedback (Erro e Sucesso) */
+.mensagem-erro {
+    color: #dc3545; /* Vermelho padrão */
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.mensagem-sucesso {
+    color: #155724; 
+    background-color: #d4edda; 
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
