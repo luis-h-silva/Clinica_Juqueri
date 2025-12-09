@@ -39,7 +39,7 @@ Siga os passos abaixo para instalar no seu computador.
 
 ### 1. Instalação
 * Instale o **XAMPP**.
-* Coloque a pasta `CONSULTA_MEDICA` dentro de `C:\xampp\htdocs\`.
+* Coloque a pasta `consulta_medica` dentro de `C:\xampp\htdocs\`.
 
 ### 2. Iniciar Servidor
 * Abra o painel do XAMPP.
@@ -53,7 +53,7 @@ Siga os passos abaixo para instalar no seu computador.
 
 ### 4. Acessar
 Abra o navegador e entre em:
-[http://localhost/CONSULTA_MEDICA](http://localhost/CONSULTA_MEDICA)
+[http://localhost/CONSULTA_MEDICA](http://localhost/consulta_medica/index.php)
 
 ---
 
@@ -75,3 +75,4 @@ Use estes usuários para testar o sistema:
 * **Ester da Silva Americo**
 
 ---
+
