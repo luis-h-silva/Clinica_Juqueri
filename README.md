@@ -1,78 +1,69 @@
-# Sistema de Gestão Clínica - Clínica Juqueri
+# Sistema Clínica Juqueri
 
 ![Status](https://img.shields.io/badge/Status-Concluído-success)
 ![PHP](https://img.shields.io/badge/Backend-PHP-blue)
 ![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
 
-> Projeto acadêmico desenvolvido para a disciplina de **Programação Web II**. O objetivo é simular o ecossistema de agendamento e gerenciamento de consultas médicas em ambiente web.
+Projeto desenvolvido para a disciplina de **Programação Web II**. O objetivo é criar um sistema web simples para marcar e gerenciar consultas médicas.
 
 ---
 
 ## Sobre o Projeto
 
-O **Clínica Juqueri** é uma aplicação web full-stack que digitaliza o fluxo de atendimento de uma clínica médica. A solução foca na usabilidade para o paciente e no controle administrativo para a gestão da clínica, implementando conceitos fundamentais de desenvolvimento web como CRUD, controle de sessão e segurança de dados.
+O sistema simula o funcionamento de uma clínica médica. Ele permite que pacientes marquem suas consultas pela internet e que os administradores gerenciem os médicos e a agenda da clínica.
 
-### Funcionalidades Principais
+### Funcionalidades
 
-#### Módulo do Paciente
-* **Autenticação Segura:** Cadastro e login de usuários.
-* **Agendamento Intuitivo:** Seleção de especialidade e médico disponível.
-* **Gestão de Agendamentos:** Visualização de histórico e cancelamento de consultas futuras.
+**Para o Paciente:**
+* Criar conta e fazer login.
+* Agendar consultas escolhendo a especialidade e o médico.
+* Ver e cancelar suas próprias consultas.
 
-#### Módulo Administrativo
-* **Gestão de Corpo Clínico:** Cadastro e remoção de médicos.
-* **Catálogo de Especialidades:** Adição de novas áreas médicas.
-* **Painel de Controle:** Visão geral de todas as consultas agendadas na clínica.
-
----
-
-## Tecnologias Utilizadas
-
-* **Front-end:** HTML5, CSS3 (Design Responsivo).
-* **Back-end:** PHP (Procedural/Orientado a Objetos).
-* **Banco de Dados:** MySQL.
-* **Ambiente de Desenvolvimento:** XAMPP.
+**Para o Administrador:**
+* Cadastrar novos médicos e especialidades.
+* Ver todas as consultas agendadas na clínica.
 
 ---
 
-## Instalação e Configuração
+## Tecnologias
 
-Siga os passos abaixo para executar o projeto em seu ambiente local.
-
-### 1. Pré-requisitos
-* XAMPP instalado (Apache + MySQL).
-
-### 2. Configuração do Diretório
-Clone ou extraia a pasta do projeto `CONSULTA_MEDICA` para o diretório raiz do servidor:
-`C:\xampp\htdocs\`
-
-### 3. Inicialização
-Abra o **XAMPP Control Panel** e inicie os serviços:
-* Apache
-* MySQL
-
-### 4. Configuração do Banco de Dados
-1.  Acesse o **phpMyAdmin**: [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
-2.  Crie um novo banco de dados (caso não exista) ou utilize a aba **Importar**.
-3.  Selecione o arquivo `banco.sql` localizado na raiz do projeto.
-4.  Execute a importação.
-
-> **NOTA IMPORTANTE SOBRE CONEXÃO**
->
-> Este projeto foi configurado nativamente para rodar com o MySQL na porta **3307** para evitar conflitos comuns no XAMPP.
->
-> * **Se o seu MySQL roda na porta 3307:** Nenhuma ação necessária.
-> * **Se o seu MySQL roda na porta padrão (3306):** Abra o arquivo `conexao.php` e altere a variável `$port` para `3306` ou remova o parâmetro de porta na conexão.
+* **Front-end:** HTML e CSS.
+* **Back-end:** PHP.
+* **Banco de Dados:** MySQL (XAMPP).
 
 ---
 
-## Credenciais para Teste
+## Como Rodar o Projeto
 
-Utilize os dados abaixo para validar as funcionalidades do sistema:
+Siga os passos abaixo para instalar no seu computador.
 
-| Perfil | Email / Usuário | Senha |
+### 1. Instalação
+* Instale o **XAMPP**.
+* Coloque a pasta `CONSULTA_MEDICA` dentro de `C:\xampp\htdocs\`.
+
+### 2. Iniciar Servidor
+* Abra o painel do XAMPP.
+* Inicie os serviços **Apache** e **MySQL**.
+
+### 3. Banco de Dados
+* Acesse [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
+* Importe o arquivo `banco.sql` que está na pasta do projeto.
+
+> **Atenção:** O projeto está configurado para a porta **3307** do MySQL. Se o seu XAMPP usa a porta 3306, altere o arquivo `conexao.php`.
+
+### 4. Acessar
+Abra o navegador e entre em:
+[http://localhost/CONSULTA_MEDICA](http://localhost/CONSULTA_MEDICA)
+
+---
+
+## Dados para Teste
+
+Use estes usuários para testar o sistema:
+
+| Tipo | Usuário / Email | Senha |
 | :--- | :--- | :--- |
-| **Administrador** | `admin` | `1234` |
+| **Admin** | `admin` | `1234` |
 | **Paciente** | `diasdeluta@gmail.com` | `abcd123456` |
 
 ---
@@ -85,8 +76,4 @@ Utilize os dados abaixo para validar as funcionalidades do sistema:
 
 ---
 
-## Licença e Observações
-
-Este projeto foi desenvolvido exclusivamente para fins educacionais. O código prioriza a clareza didática para demonstração de conceitos de desenvolvimento web.
-
-&copy; 2025 Clínica Juqueri - Todos os direitos reservados.
+&copy; 2025 Clínica Juqueri. Fins acadêmicos.
