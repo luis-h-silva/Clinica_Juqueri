@@ -75,5 +75,3 @@ Use estes usuários para testar o sistema:
 * **Ester da Silva Americo**
 
 ---
-
-&copy; 2025 Clínica Juqueri. Fins acadêmicos.
