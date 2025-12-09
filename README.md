@@ -53,7 +53,7 @@ Siga os passos abaixo para instalar no seu computador.
 
 ### 4. Acessar
 Abra o navegador e entre em:
-[http://localhost/CONSULTA_MEDICA](http://localhost/consulta_medica/index.php)
+[http://localhost/consulta_medica](http://localhost/consulta_medica/index.php)
 
 ---
 
@@ -75,4 +75,5 @@ Use estes usuários para testar o sistema:
 * **Ester da Silva Americo**
 
 ---
+
 
